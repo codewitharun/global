@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import Routes from "./src/navigation/Routes";
+import Routes from "./Src/navigation/Routes";
 
 import { createTheme, ThemeProvider } from "@rneui/themed";
 

@@ -300,15 +300,13 @@ const Register = (props) => {
 
   const handleConfirm = (date) => {
     console.log("A date has been picked: ", moment(date).format("MM-DD-YYYY"));
-    setDate(moment(date).format("MM-DD-YYYY"))
-    setPhone(code + Phone)
+    setDate(moment(date).format("MM-DD-YYYY"));
+    setPhone(code + Phone);
     hideDatePicker();
   };
 
-
   // ************* SignUp API ***************
   const SignUpAPi = () => {
-
     const DATA = {
       address: Address,
       city: City,
@@ -769,7 +767,6 @@ const Register = (props) => {
             ) : null}
           </View>
 
-
           <View
             style={{
               height: height * 0.1,
@@ -808,14 +805,15 @@ const Register = (props) => {
             ) : null}
           </View>
 
-
-          <View style={{
-            height: height * 0.1,
-            width: width * 1,
-            // backgroundColor: "green",
-            // justifyContent: "center",
-            alignItems: "center",
-          }}>
+          <View
+            style={{
+              height: height * 0.1,
+              width: width * 1,
+              // backgroundColor: "green",
+              // justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <TouchableOpacity
               onPress={() => setDatePickerVisibility(true)}
               style={{
@@ -828,14 +826,18 @@ const Register = (props) => {
                 height: height * 0.075,
                 width: width * 0.9,
                 // justifyContent: "center",
-                alignItems: "center"
+                alignItems: "center",
               }}
             >
-              <Text style={{
-                fontFamily: "Lato-Regular",
-                fontSize: height / 64,
-                color: COLOR.BUTTONCOLOR
-              }}>{date}</Text>
+              <Text
+                style={{
+                  fontFamily: "Lato-Regular",
+                  fontSize: height / 64,
+                  color: COLOR.BUTTONCOLOR,
+                }}
+              >
+                {date}
+              </Text>
             </TouchableOpacity>
           </View>
           <DateTimePickerModal
